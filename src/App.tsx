@@ -5,7 +5,7 @@ import Contact from './pages/contact'
 export default function App() {
   return (
     <>
-      <nav>
+      <nav style={{ padding: 16 }}>
         <Link to="/">Home</Link> |{' '}
         <Link to="/contact">Contact</Link>
       </nav>
@@ -14,7 +14,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
 
-        {/* Fallback */}
+        {/* fallback agar tidak blank */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
